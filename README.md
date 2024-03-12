@@ -1,9 +1,8 @@
+# Super Resolution of Synthetic Panoramic Radiography with CycleGAN in PyTorch
 
 <img src='imgs/ct2pano_result.png' align="right" width=914>
 
 <br><br><br>
-
-# CycleGAN in PyTorch
 
 ## Prerequisites
 - Linux or macOS
@@ -37,9 +36,9 @@ To see more intermediate results, check out `./checkpoints/ct2pano/web/index.htm
 - Test the model:
 ```bash
 #!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/maps --name ct2pano_SSIM--model cycle_gan
+python test.py --dataroot ./datasets/maps --name ct2pano --model cycle_gan
 ```
-- The test results will be saved to a html file here: `./results/ct2pano_SSIM/latest_test/index.html`.
+- The test results will be saved to a html file here: `./results/ct2pano/latest_test/index.html`.
 
 
 ### Apply a pre-trained model (CycleGAN)
